@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Epicode - Formazione Web Developer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Epicode School: contattaci per i corsi di Front End Developer."
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/stile.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+  </head>
+  <header>
+    <div class="logo">
+      <a href="../start/index.html"
+        ><img src="assets/images/logo.png" alt="logo"
+      /></a>
+    </div>
+    <div class="menu">
+      <input type="checkbox" class="btnMenu" id="btnMenu" />
+      <label for="btnMenu" class="icoMenu"
+        ><i class="fa-solid fa-ellipsis"></i
+      ></label>
+      <nav>
+        <ul>
+          <li><a href="../start/index.html" id="nav"> Home </a></li>
+          <li><a href="../start/chi-siamo.html" id="nav"> Chi siamo </a></li>
+          <li><a href="../start/contatti.html" id="nav"> Contatti </a></li>
+          <li>
+            <a href="../start/layout.html" id="nav">
+              <button id="infor">Registrati</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <h2>Contatti</h2>
+    <div id="wrapper2">
+      <section>
+        <form
+          name="formmail"
+          method="post"
+          action="iscriviti.php"
+          id="formcontatti"
+        >
+          <label for="nome"></label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Nome e cognome"
+          />
+
+          <label for="email"></label>
+          <input
+            type="text"
+            id="mail"
+            name="email"
+            placeholder="Indirizzo valido nome@casella.com"
+          />
+
+          <label for="msg"></label>
+          <textarea
+            id="msg"
+            name="msg"
+            placeholder="Scrivi in breve il tuo messaggio"
+          ></textarea>
+
+          <button type="submit" value="submit" id="infocontatti">
+            Invia messaggio
+          </button>
+        </form>
+      </section>
+
+      <section>
+        <h6>Sede formativa</h6>
+
+        <address>Via Appia 1 00100 Roma (RM)</address>
+        <p>info@epicode.school +39 0612345956</p>
+        <h6>Lavora con noi</h6>
+        <p>
+          Per poterti candidare ad un ruolo da docente invia il tuo cv a
+          job@epicode.school
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <section id="wrapper2">
+        <div>
+          <h4>Chi siamo</h4>
+          <p>
+            Epicode School nasce con l’obiettivo di rivoluzionare la formazione
+            in ambito tech.
+          </p>
+        </div>
+        <div>
+          <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-linkedin"></i
+            ><i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <div>
+          <h4>Iscriviti alla nostra newsletter!</h4>
+          <form action="iscriviti.php" method="post" target="_blank">
+            <input type="email" label="email" name="email" id="email" /><button
+              type="submit"
+              value="submit"
+              label="iscriviti!"
+              id="iscriviti"
+            >
+              Va bene!
+            </button>
+          </form>
+        </div>
+      </section>
+      <div>
+        &copy;2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) -
+        Tel. 06-12345678
+      </div>
+    </footer>
+  </body>
+</html>
